@@ -1,0 +1,13 @@
+@mixin flexprob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin comonprob($letter,$transi){  //if you add or delete any thing than change here if you write any indside the class than here pass the paramter like this()
+    color: red;
+    font-size: 5rem + 5rem;
+    letter-spacing:$letter;
+    text-transform:$transi;
+
+}

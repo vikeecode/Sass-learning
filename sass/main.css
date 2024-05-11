@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(115, 240, 144, 0.829);
+}
+.header1 h1 {
+  color: red;
+  font-size: 10rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+}
+.header1 h1:hover {
+  color: rgb(90, 84, 84);
+}
+.header1 p {
+  color: red;
+  font-size: 10rem;
+  letter-spacing: 0.8rem;
+  text-transform: capitalize;
+}
+.header1 p:hover {
+  color: rgb(90, 84, 84);
+}
+.header1 p::after {
+  content: "to Sass";
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+@import "mixin";
+@import "var";
+//variable scss
+//how to use variable
+//first add a variable
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+//1:operators   :- you can use operator like (+,-,*,\)like this
+//2.variable:-
+
+//3.nesting:-
+//4.mixin:- in which is commonly use in cord lot of the time then use a mixin 
+//6:-parameter()
+
+//7:-Partials : under it these code in different page then use this and use make fiie use _ and import the file
+
+.header1{
+    width: 100vw;
+    height: 100vh;
+    @include flexprob;   //use a include in if you write a mixin property
+    background-color: $bgc-color;
+h1{
+    @include comonprob(.6rem , uppercase); //here pass a arrugment under it() in this declartion position matter
+    &:hover{
+        color: rgb(90, 84, 84); //in nesting you can do this thing also,and you use a & like this
+    }
+}
+
+p{
+    @include comonprob(.8rem , capitalize); //same here same thimg declartion matter
+    &:hover{
+        color: rgb(90, 84, 84); //same here,same here is there &
+    }
+    &::after{
+        content: "to Sass";
+    }
+}
+
+} //  nesting :- this is nesting
